@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { images } from "./helpers";
+import UploadAvatar from "./components/UploadAvatar";
+import Form from "./components/Form";
 
 export default function Home() {
   return (
@@ -19,7 +21,11 @@ export default function Home() {
           <p>Secure your spot at next years biggest coding conference</p>
         </div>
 
-        <div></div>
+        {/* Image component */}
+        <UploadAvatar />
+
+        {/* Form component */}
+        <Form />
       </div>
     </>
   );
