@@ -41,7 +41,10 @@ const Form = () => {
   };
 
   return (
-    <form className="w-full mt-7" onSubmit={handleSubmit}>
+    <form
+      className="w-full mt-7 md:w-[500px] lg:w-[500px]"
+      onSubmit={handleSubmit}
+    >
       <UploadAvatar onImageChange={handleImageChange} image={formData.image} />
       <label htmlFor="fullName">Full Name</label>
       <input
