@@ -31,17 +31,17 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const queryParams = newURLSearchParams({
+    const queryParams = new URLSearchParams({
       fullName: formData.fullName,
       email: formData.email,
       githubUsername: formData.githubUsername,
     }).toString();
 
-    router.push(`/ticket?${queryParams}`);
+    router.push(`./ticket?${queryParams}`);
   };
 
   return (
-    <form className="w-full mt-7">
+    <form className="w-full mt-7" onSubmit={handleSubmit}>
       <UploadAvatar onImageChange={handleImageChange} image={formData.image} />
       <label htmlFor="fullName">Full Name</label>
       <input

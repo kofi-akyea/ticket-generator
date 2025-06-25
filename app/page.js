@@ -6,7 +6,7 @@ import Form from "./components/Form";
 export default function Home() {
   return (
     <>
-      <div className="bg-black text-white w-[100vw] h-auto flex flex-col items-center justify-center p-5 pt-14">
+      <div className="bg-[url('/images/background-desktop.png')] bg-cover bg-no-repeat bg-center text-white w-[100vw] h-auto flex flex-col items-center justify-center p-5 pt-14">
         <Image
           src={images.logo}
           alt="logo"
