@@ -37,7 +37,7 @@ const UploadAvatar = ({ onImageChange, image }) => {
       <input
         type="file"
         name="image"
-        accept="image/jpeg, image/png"
+        accept="image/jpeg, image/png, image/jpg"
         ref={fileInputRef}
         onChange={handleFileChange}
         style={{ display: "none" }}
@@ -51,7 +51,9 @@ const UploadAvatar = ({ onImageChange, image }) => {
             <Image
               src={previewUrl}
               alt="Avatar Preview"
-              layout="fill"
+              width={100}
+              height={100}
+              // layout="fill"
               objectFit="cover"
               className="rounded-2xl"
             />

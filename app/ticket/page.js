@@ -1,11 +1,10 @@
+import React from "react";
 import Image from "next/image";
-import { images } from "./helpers";
-import UploadAvatar from "./components/UploadAvatar";
-import Form from "./components/Form";
+import { images } from "../helpers";
 
-export default function Home() {
+const ticketpage = () => {
   return (
-    <>
+    <div>
       <div className="bg-black text-white w-[100vw] h-auto flex flex-col items-center justify-center p-5 pt-14">
         <Image
           src={images.logo}
@@ -16,16 +15,13 @@ export default function Home() {
         />
         <div className="pl-4 pr-4 text-center">
           <h1 className="text-2xl  font-bold mb-4">
-            Your Journey to Coding Conf 2025 Starts Here!
+            Congrats Jonatan Kristov! Your ticket is ready.
           </h1>
           <p>Secure your spot at next years biggest coding conference</p>
         </div>
-
-        {/* Image component */}
-
-        {/* Form component */}
-        <Form />
       </div>
-    </>
+    </div>
   );
-}
+};
+
+export default ticketpage;
